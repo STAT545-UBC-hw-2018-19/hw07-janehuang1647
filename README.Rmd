@@ -14,7 +14,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-**NOTE: This is a toy package created for expository purposes. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).**
+**NOTE: 
+* This package is originally developed by @jennybc, please check here for the original GitHub repository [foofactor](https://github.com/jennybc/foofactors).
+* This is a toy package created for expository purposes. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).**
 
 ### foofactors
 
@@ -23,7 +25,7 @@ Factors are a very useful type of variable in R, but they can also drive you nut
 ### Installation
 
 ```{r installation, eval = FALSE}
-devtools::install_github("jennybc/foofactors")
+devtools::install_github("STAT545-UBC-students/hw07-janehuang1647")
 ```
   
 ### Quick demo
@@ -62,3 +64,23 @@ The `freq_out()` function returns a frequency table as a well-named `tbl_df`:
 ```{r}
 freq_out(x)
 ```
+
+The `factor_check()` function returns a stopping message if the input is not a factor:
+```{r}
+factor_check(x)
+```
+
+The `freorder()`function returns a factor in a descending order:
+```{r}
+freorder(x)
+```
+
+The `fset_level()` function sets levels to the order in which they appear in the data, i.e. set the levels “as is”:
+```{r}
+y <- c("apple","coconut","banana")
+yfx <- factor(y)
+#check bothe the level of the original factor and after the fset_level() function.
+levels(yfx) # the levels is ordered in alphabetical order
+levels(fset_level(yfx))  # the level is ordered in the order of the original factor.
+```
+
