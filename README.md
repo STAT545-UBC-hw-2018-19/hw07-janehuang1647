@@ -1,4 +1,19 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+This is the Repository for Zhenyi Huang's Homework 7
+------------------------------------------------------
+
+Please refer to the following table for the file access:
+
+|    List of the Files         | 
+|--------------------|
+| [README.md](https://github.com/STAT545-UBC-students/hw07-janehuang1647/blob/master/README.md)|
+| [R script folder](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/R)|
+| [Test folder](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/tests/testthat)|
+| [R script description folder](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/man)|
+| [Vignettes folder](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/vignettes)|
+
+
+
 **NOTE: \* This package is originally developed by @jennybc, please check here for the original GitHub repository [foofactor](https://github.com/jennybc/foofactors). \* This is a toy package created for expository purposes. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).**
 
 ### foofactors

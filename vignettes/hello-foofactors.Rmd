@@ -1,6 +1,6 @@
 ---
 title: "stringsAsFactors = HELLNO"
-author: "Jenny Bryan"
+author: "Zhenyi Huang"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -49,7 +49,7 @@ freq_out(x)
 ```
 
 The `freorder()`function returns a factor in a descending order. Let's see an exmaple from our previous homework:
-```{r, original order}
+```{r, original order,fig.width= 4,fig.height=2}
 # first we load the gapminder first
 suppressPackageStartupMessages(library(gapminder))
 suppressPackageStartupMessages(library(tidyverse))
@@ -62,7 +62,7 @@ gapminder %>%
   ggplot(aes(continent,lifeExp))+
   geom_boxplot(alpha=0.25, aes(fill=continent))
 ```
-```{r, apply freorder() function}
+```{r, apply freorder() function, fig.width= 4, fig.height=2}
 # now we apply the freorder() function to the continent, and we are expecting a reversed order.
 gapminder %>% 
  select(lifeExp,continent) %>% 
@@ -73,7 +73,7 @@ gapminder %>%
 
 The `fset_level()` function sets levels to the order in which they appear in the data, i.e. set the levels “as is”:
 And again we use the same example, but compare it with the one applied with `fset_level()`.
-```{r, original order}
+```{r, original order 1, fig.width= 4,fig.height=2}
 
 # the original order for continent is alphabetical order.
 gapminder %>% 
@@ -83,7 +83,7 @@ gapminder %>%
 
   
 ```
-```{r, apply fset_level() }
+```{r, apply fset_level(), fig.width= 4,fig.height=2 }
 # now we apply the fset_level() function to the continent, and we are expecting an order which is the same as the entry appeared in the data frame.
 
 
