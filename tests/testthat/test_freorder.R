@@ -13,7 +13,6 @@ test_that("freorder works for identical elements", {
   x <- c("banana","banana","banana")
   fx <- factor(x)
 
-  #should return an error
   expect_identical(levels(freorder(fx)),c("banana"))
 
 })
@@ -23,7 +22,7 @@ test_that("freorder works for some dupliated element", {
   x <- c("banana","banana","apple","coconut")
   fx <- factor(x)
 
-  #should return an error
+
   expect_identical(levels(freorder(fx)),c("coconut","banana","apple"))
 
 })

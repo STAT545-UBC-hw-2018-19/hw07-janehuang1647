@@ -93,5 +93,20 @@ gapminder %>%
   geom_boxplot(alpha=0.25, aes(fill=fset_level(continent)))
 
 ```
+## Read and Write files
 
+The `df_write()` write a dataframe into the file
+```{r}
+  df <- data.frame(
+    testing = factor(c("a","b","c","a","c","e"), levels = c("a", "b","c","e"),
+                     labels = c("A", "B","C","E")))
+
+
+    df_write(df, "./test.csv", "./test.txt")
+```
+The `df_read()` then read the data from the file and retating the factor levels.
+
+```{r}
+df_read("./test.csv", "./test.txt")
+```
 

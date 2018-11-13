@@ -1,19 +1,4 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-This is the Repository for Zhenyi Huang's Homework 7
-------------------------------------------------------
-
-Please refer to the following table for the file access:
-
-|    List of the Files         | 
-|--------------------|
-| [README.md](https://github.com/STAT545-UBC-students/hw07-janehuang1647/blob/master/README.md)|
-| [R script folder](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/R)|
-| [Test folder](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/tests/testthat)|
-| [R script description folder](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/man)|
-| [Vignettes folder](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/vignettes)|
-
-
-
 **NOTE: \* This package is originally developed by @jennybc, please check here for the original GitHub repository [foofactor](https://github.com/jennybc/foofactors). \* This is a toy package created for expository purposes. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).**
 
 ### foofactors
@@ -113,4 +98,33 @@ levels(yfx) # the levels is ordered in alphabetical order
 #> [1] "apple"   "banana"  "coconut"
 levels(fset_level(yfx))  # the level is ordered in the order of the original factor.
 #> [1] "apple"   "coconut" "banana"
+```
+
+The `df_write()` write a dataframe into the file
+
+``` r
+  df <- data.frame(
+    testing = factor(c("a","b","c","a","c","e"), levels = c("a", "b","c","e"),
+                     labels = c("A", "B","C","E")))
+
+    df_write(df, "./test.csv", "./test.txt")
+```
+
+The `df_read()` then read the data from the file and retating the factor levels.
+
+``` r
+df_read("./test.csv", "./test.txt")
+#> Parsed with column specification:
+#> cols(
+#>   testing = col_character()
+#> )
+#> # A tibble: 6 x 1
+#>   testing
+#>   <fct>  
+#> 1 A      
+#> 2 B      
+#> 3 C      
+#> 4 A      
+#> 5 C      
+#> 6 E
 ```
