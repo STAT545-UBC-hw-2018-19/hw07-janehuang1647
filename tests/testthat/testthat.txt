@@ -1,1 +1,0 @@
-list(testing = c("A", "B", "C", "E"))
