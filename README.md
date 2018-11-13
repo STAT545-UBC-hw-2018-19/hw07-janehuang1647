@@ -1,7 +1,8 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 This is the repository for ZHENYI HUANG's HW07.
+===============================================
 
-\*\*NOTE:
+*NOTE*:
 
 -   This package is originally developed by @jennybc, please check here for the original GitHub repository [foofactor](https://github.com/jennybc/foofactors).
 
