@@ -16,7 +16,9 @@ knitr::opts_chunk$set(
 This is the repository for ZHENYI HUANG's HW07.
 
 **NOTE: 
+
 * This package is originally developed by @jennybc, please check here for the original GitHub repository [foofactor](https://github.com/jennybc/foofactors).
+
 * This is a toy package created for expository purposes. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).**
 
 ### foofactors
