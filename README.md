@@ -116,31 +116,21 @@ levels(fset_level(yfx))  # the level is ordered in the order of the original fac
 #> [1] "apple"   "coconut" "banana"
 ```
 
-The `df_write()` write a dataframe into the file
-
-``` r
-  df <- data.frame(
-    testing = factor(c("a","b","c","a","c","e"), levels = c("a", "b","c","e"),
-                     labels = c("A", "B","C","E")))
-
-    df_write(df, "./test.csv", "./test.txt")
-```
-
 The `df_read()` then read the data from the file and retating the factor levels.
 
 ``` r
-df_read("./test.csv", "./test.txt")
-#> Parsed with column specification:
-#> cols(
-#>   testing = col_character()
-#> )
-#> # A tibble: 6 x 1
-#>   testing
-#>   <fct>  
-#> 1 A      
-#> 2 B      
-#> 3 C      
-#> 4 A      
-#> 5 C      
-#> 6 E
+(a <- df_read ("gapminderTest.txt"))
+#> [1] list.testing...c.A..B..C..E..
+#> <0 rows> (or 0-length row.names)
+# check its structure to see whether the factor level retained.
+str(a)
+#> 'data.frame':    0 obs. of  1 variable:
+#>  $ list.testing...c.A..B..C..E..: logi
+```
+
+The `df_write()` write a dataframe into the file. we can write the above dataframe to file
+
+``` r
+
+    df_write(a, "./gapMinderTest.txt")
 ```
