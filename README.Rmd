@@ -14,6 +14,14 @@ knitr::opts_chunk$set(
 )
 ```
 # This is the repository for ZHENYI HUANG's HW07.
+Please refer to the following table for easy access:
+
+|    List of the Files         | 
+|--------------------|
+| [R script file](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/R)|
+| [Description files](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/man)|
+| [Test files](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/tests)|
+| [Vignettes file](https://github.com/STAT545-UBC-students/hw07-janehuang1647/tree/master/vignettes)
 
 _NOTE_: 
 
