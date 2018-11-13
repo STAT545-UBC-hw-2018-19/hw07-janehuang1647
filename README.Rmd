@@ -13,6 +13,7 @@ knitr::opts_chunk$set(
   fig.path = "README-"
 )
 ```
+This is the repository for ZHENYI HUANG's HW07.
 
 **NOTE: 
 * This package is originally developed by @jennybc, please check here for the original GitHub repository [foofactor](https://github.com/jennybc/foofactors).
